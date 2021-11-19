@@ -1,0 +1,356 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600&display=swap");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	/* по умолчанию */
+	font-size: 16px;
+}
+body {
+	line-height: 1.5;
+	color: #000;
+	background-color: #333;
+	font-family: "Poppins";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ------------------------------ */
+.main {
+	flex-grow: 1;
+}
+/* ------------------------------ */
+[class*="__container"] {
+	max-width: 1020px;
+	margin: 0px auto;
+}
+/* ------------------------------ */
+.main__appointment {
+	margin: 0px 0px 100px 0px;
+}
+.appointment {
+	font-family: Roboto;
+	color: #fff;
+}
+.appointment__container {
+}
+.appointment__block {
+}
+.block {
+	display: flex;
+	max-width: 585px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #5d62b5;
+	padding: 76px 58px;
+	row-gap: 43px;
+	border-radius: 40px;
+}
+.block__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.16;
+}
+.block__form {
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.form__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -11px;
+	row-gap: 22px;
+}
+.form__item {
+	padding: 0 11px;
+	flex: 0 1 50%;
+}
+.form__item input,
+.form__item textarea {
+	color: #fff;
+	padding: 17px 23px;
+	width: 100%;
+	background-color: #5d62b5;
+	outline: 2px solid #ffffff;
+	border-radius: 10px;
+}
+.form__item_area {
+	flex: 1 1 auto;
+}
+.form__item_area textarea {
+	min-height: 180px;
+}
+.form__item_area textarea::placeholder,
+.form__item input::placeholder {
+	color: #fff;
+	opacity: 0.8;
+}
+.form__item_area textarea:focus,
+.form__item input:focus {
+	outline: 2px solid rgba(255, 255, 255, 0.8);
+}
+.form__footer {
+	align-self: flex-end;
+}
+.form__button {
+	padding: 9px 34px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	background-color: #f2726f;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.form__button:hover {
+	color: #f2726f;
+	background-color: #fff;
+}
+.main__summary {
+	margin: 0px 0px 50px 0px;
+}
+.summary {
+}
+.summary__container {
+	max-width: 446px;
+	background-color: #f5f7ff;
+	padding: 17px 30px;
+}
+.summary__title {
+	font-weight: 600;
+	font-size: 24px;
+	margin: 0px 0px 14px 0px;
+}
+.summary__form {
+}
+.form-summary {
+}
+.form-summary__info {
+	margin: 0px 0px 12px 0px;
+}
+.form-summary__info_margin {
+	margin: 0px 0px 5px 0px;
+}
+.main-info {
+}
+.main-info *:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
+.main-info__title {
+	font-size: 18px;
+}
+.main-info__text {
+	color: #666666;
+	font-size: 14px;
+	max-width: 287px;
+}
+.form-summary__top {
+	margin: 0px 0px 17px 0px;
+}
+.form-summary__top > :not(:last-child),
+.login__body > :not(:last-child) {
+	margin: 0px 0px 15px 0px;
+}
+.form-summary__select select {
+	cursor: pointer;
+}
+.input-block {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+.input-block__string {
+	border-radius: 4px;
+	padding: 15px 17px;
+	outline: 1px solid #a2a6b0;
+}
+.input-block__string::placeholder {
+	color: #a2a6b0;
+}
+.input-block__string:focus {
+	outline: 1px solid #0156ff;
+}
+.radiobutton__subtitle,
+.input-block__lable {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+}
+.form-summary__body {
+	margin: 0px 0px 19px 0px;
+}
+.form-summary__radio {
+	position: relative;
+	margin: 0px 0px 30px 0px;
+}
+.form-summary__radio *:not(:last-child) {
+	margin: 0px 0px 8px 0px;
+}
+.radiobutton {
+}
+.radiobutton__subtitle {
+}
+.radiobutton__input {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.radiobutton__lable {
+	display: inline-flex;
+	column-gap: 8px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1.42;
+	position: relative;
+	align-items: center;
+	width: 100%;
+}
+.radiobutton__lable::before {
+	content: "";
+	flex: 0 0 21px;
+	height: 21px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 2px solid #0156ff;
+	align-self: flex-start;
+}
+.radiobutton__lable::after {
+	content: "";
+	width: 13px;
+	height: 13px;
+	background-color: #0156ff;
+	border-radius: 50%;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+}
+.radiobutton__input:checked + .radiobutton__lable::after {
+	transform: scale(1);
+}
+.form-summary__footer {
+}
+.form-summary__button {
+	color: #0156ff;
+	background-color: #fff;
+	width: 100%;
+}
+.btn {
+	font-weight: 600;
+	font-size: 14px;
+	padding: 15px 0;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	border: 2px solid #0156ff;
+}
+.form-summary__button:hover {
+	color: #fff;
+	background-color: #0156ff;
+}
+.btn:focus {
+	outline: 1px solid #0156ff;
+}
+.main__login {
+}
+.login {
+}
+.login__container {
+	max-width: 584px;
+	background-color: #f5f7ff;
+	padding: 37px 57px;
+}
+.login__title {
+	font-weight: 600;
+	font-size: 18px;
+	margin: 0px 0px 12px 0px;
+}
+.login__subtitle {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 2.14;
+	margin: 0px 0px 12px 0px;
+}
+.login__body {
+	margin: 0px 0px 30px 0px;
+}
+.login__input {
+}
+.input-block__lable_star {
+}
+.input-block__lable_star::after {
+	content: "*";
+	color: #c94d3f;
+	margin: 0px 0px 0px 2px;
+}
+.login__footer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 22px;
+}
+.login__button {
+	flex: 0 0 150px;
+	color: #fff;
+	background: #0156ff;
+}
+.login__button:hover {
+	color: #0156ff;
+	background-color: #fff;
+}
+.login__link {
+	font-size: 14px;
+	line-height: 1.42;
+	align-self: center;
+}
+.login__link a {
+	color: #0156ff;
+}
